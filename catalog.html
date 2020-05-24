@@ -11,7 +11,7 @@
       <a href="index.html"><img src="img/svg-device/logo-device.svg" width="163" height="35" alt="logo"></a>
 
       <section>
-        <input type="text" placeholder="Поиск по сайту">
+        <input type="search" name="search" id="search" placeholder="Поиск по сайту">
       </section>
   
       <section>
@@ -44,6 +44,14 @@
             <a href="#">Контакты</a> 
           </li>
         </ul>
+        <ul>
+          <li><a href="">Виртуальная реальность</a></li>
+          <li><a href="">Моноподы для селфи</a></li>
+          <li><a href="">Экшн-камеры</a></li>
+          <li><a href="">Фитнес-браслеты</a></li>
+          <li><a href="">Умные часы</a></li>
+          <li><a href="">Квадрокоптер</a></li>
+        </ul>
       </nav>    
       
     </header>
@@ -70,28 +78,30 @@
             <div>Фильтр:</div>
 
             <section>
+              <form action="" method="POST">
                 <div>
                   <span>Стоимость</span>
                   <input type="range"> 
                 </div>
                 <div>
-                    <span>Цвет</span>
+                    <label for="color">Цвет</label>
                     <ul>
-                        <li><input type="checkbox" checked>Чёрный</li>
-                        <li><input type="checkbox">Белый</li>
-                        <li><input type="checkbox" checked>Синий</li>
-                        <li><input type="checkbox" checked>Красный</li>
-                        <li><input type="checkbox">Розовый</li>
+                        <li><input type="checkbox" name="color" id="color" checked>Чёрный</li>
+                        <li><input type="checkbox" name="color" id="color">Белый</li>
+                        <li><input type="checkbox" name="color" id="color" checked>Синий</li>
+                        <li><input type="checkbox" name="color" id="color" checked>Красный</li>
+                        <li><input type="checkbox" name="color" id="color">Розовый</li>
                     </ul>
                 </div>
                 <div>
-                    <span>Bluetooth</span>
+                    <label for="bluetooth">Bluetooth</label>
                     <ul>
-                        <li><input type="radio" checked>Есть</li>
-                        <li> <input type="radio">Нет </li>
+                        <li><input type="radio" name="bluetooth" id="bluetooth" checked>Есть</li>
+                        <li><input type="radio" name="bluetooth" id="bluetooth">Нет</li>
                     </ul>
                 </div>
-                <button type="button">Показать</button>
+                <input type="submit" value="Показать">
+              </form>
             </section>
 
         </aside>
@@ -114,24 +124,32 @@
             <ul>
               <li>
                 <span>New</span>
+                <button type="button">В корзину</button>
+                <button type="button">Добавить к сравнению</button>
                 <img src="img/item-1 1.jpg" width="360" height="380" alt="item1">
                 <span>Любительская селфи-палка</span>
                 <span>500 руб.</span>
               </li>
               <li>
                 <span>New</span>
+                <button type="button">В корзину</button>
+                <button type="button">Добавить к сравнению</button>
                 <img src="img/item-2 1.jpg" width="360" height="380" alt="item2">
                 <span>Профессиональная селфи-палка</span>
                 <span>1 500 руб.</span>
               </li>
               <li>
                 <span>New</span>
+                <button type="button">В корзину</button>
+                <button type="button">Добавить к сравнению</button>
                 <img src="img/item-3 1.jpg" width="360" height="380" alt="item3">
                 <span>Непотопляемая селфи-палка</span>
                 <span>2 500 руб.</span>
               </li>
               <li>
                 <span>New</span>
+                <button type="button">В корзину</button>
+                <button type="button">Добавить к сравнению</button>
                 <img src="img/item-4 1.jpg" width="360" height="380" alt="item4">
                 <span>Селфи-палка «Следуй за мной»</span>
                 <span>4 900 руб.</span>
