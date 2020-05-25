@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
     <header>
 
-      <a href="index.html"><img src="img/svg-device/logo-device.svg" width="163" height="35" alt="logo"></a>
+      <a href="index.html">
+        <span class="visually-hidden">Логотип</span>
+        <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="logo">
+      </a>
 
       <section>
         <input type="search" name="search" id="search" placeholder="Поиск по сайту">
@@ -78,7 +82,7 @@
             <div>Фильтр:</div>
 
             <section>
-              <form action="" method="POST">
+              <form action="https://echo.htmlacademy.ru/" method="POST">
                 <div>
                   <span>Стоимость</span>
                   <input type="range"> 
@@ -86,18 +90,18 @@
                 <div>
                     <label for="color">Цвет</label>
                     <ul>
-                        <li><input type="checkbox" name="color" id="color" checked>Чёрный</li>
-                        <li><input type="checkbox" name="color" id="color">Белый</li>
-                        <li><input type="checkbox" name="color" id="color" checked>Синий</li>
-                        <li><input type="checkbox" name="color" id="color" checked>Красный</li>
-                        <li><input type="checkbox" name="color" id="color">Розовый</li>
+                        <li><input type="checkbox" name="black" id="color" checked>Чёрный</li>
+                        <li><input type="checkbox" name="white" id="color">Белый</li>
+                        <li><input type="checkbox" name="blue" id="color" checked>Синий</li>
+                        <li><input type="checkbox" name="red" id="color" checked>Красный</li>
+                        <li><input type="checkbox" name="pink" id="color">Розовый</li>
                     </ul>
                 </div>
                 <div>
                     <label for="bluetooth">Bluetooth</label>
                     <ul>
-                        <li><input type="radio" name="bluetooth" id="bluetooth" checked>Есть</li>
-                        <li><input type="radio" name="bluetooth" id="bluetooth">Нет</li>
+                        <li><input type="radio" name="bluetooth" id="bluetooth" value="true" checked>Есть</li>
+                        <li><input type="radio" name="bluetooth" id="bluetooth" value="false">Нет</li>
                     </ul>
                 </div>
                 <input type="submit" value="Показать">
@@ -116,8 +120,8 @@
                 <li><button type="button">По популярности</button></li>
               </ul>
               <ul>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
+                <li><button type="button"><span class="visually-hidden">Сортировка по убыванию</span></button></li>
+                <li><button type="button"><span class="visually-hidden">Сортировка по возрастанию</span></button></li>
               </ul>
             </section>
 
@@ -159,9 +163,9 @@
             <section>
                 <button type="button">Назад</button>
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
+                    <li><button type="button">1</button></li>
+                    <li><button type="button">2</button></li>
+                    <li><button type="button">3</button></li>
                 </ul>
                 <button type="button">Вперёд</button>
             </section>
@@ -173,7 +177,10 @@
     <footer>
 
         <section>
-          <a href=""><img src="img/svg-device/logo-device.svg" width="163" height="35" alt="logo"></a>
+          <a href="">
+            <span class="visually-hidden">Логотип</span>
+            <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="logo">
+          </a>
           <ul>
             <li>
               <a href="">Валентин Петухов</a>
@@ -206,9 +213,9 @@
   
         <section>
           <ul>
-            <li><a href="#"><img src="#" alt="facebook"></a></li>
-            <li><a href="#"><img src="#" alt="inst"></a></li>
-            <li><a href="#"><img src="#" alt="twitter"></a></li>
+            <li><a href="#"><span class="visually-hidden">Наш facebook</span><img src="#" alt="facebook"></a></li>
+            <li><a href="#"><span class="visually-hidden">Наш instagram</span><img src="#" alt="instagram"></a></li>
+            <li><a href="#"><span class="visually-hidden">Наш twitter</span><img src="#" alt="twitter"></a></li>
           </ul>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="HTMLacademy"></a>
         </section>
