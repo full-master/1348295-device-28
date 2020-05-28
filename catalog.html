@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -14,14 +14,14 @@
         <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="logo">
       </a>
 
-      <section>
+      <section class="left-section">
         <input type="search" name="search" id="search" placeholder="Поиск по сайту">
       </section>
   
-      <section>
+      <section class="right-section">
         <ul>
           <li>
-            <a>Валентин Петухов</a>
+            <a href="" class="top-user">Валентин Петухов</a>
             <button type="button">Выйти</button>
           </li>
           <li>
@@ -48,7 +48,7 @@
             <a href="#">Контакты</a> 
           </li>
         </ul>
-        <ul>
+        <ul class="visually-hidden">
           <li><a href="">Виртуальная реальность</a></li>
           <li><a href="">Моноподы для селфи</a></li>
           <li><a href="">Экшн-камеры</a></li>
@@ -62,7 +62,7 @@
 
     <main>
         
-        <section>
+        <section class="main-header">
             <h1>Моноподы для селфи</h1>
             <ul>
                 <li>
@@ -81,7 +81,7 @@
 
             <div>Фильтр:</div>
 
-            <section>
+            <section class="aside-form">
               <form action="https://echo.htmlacademy.ru/" method="POST">
                 <div>
                   <label for="cost">Стоимость</label>
@@ -127,36 +127,36 @@
 
             <ul>
               <li>
-                <span>New</span>
-                <button type="button">В корзину</button>
-                <button type="button">Добавить к сравнению</button>
+                <span class="visually-hidden">New</span>
+                <button type="button" class="visually-hidden">В корзину</button>
+                <button type="button" class="visually-hidden">Добавить к сравнению</button>
                 <img src="img/item-1 1.jpg" width="360" height="380" alt="item1">
-                <span>Любительская селфи-палка</span>
-                <span>500 руб.</span>
+                <span class="item-name">Любительская селфи-палка</span>
+                <span class="item-cost">500 руб.</span>
               </li>
               <li>
-                <span>New</span>
-                <button type="button">В корзину</button>
-                <button type="button">Добавить к сравнению</button>
+                <span class="visually-hidden">New</span>
+                <button type="button" class="visually-hidden">В корзину</button>
+                <button type="button" class="visually-hidden">Добавить к сравнению</button>
                 <img src="img/item-2 1.jpg" width="360" height="380" alt="item2">
-                <span>Профессиональная селфи-палка</span>
-                <span>1 500 руб.</span>
+                <span class="item-name">Профессиональная селфи-палка</span>
+                <span class="item-cost">1 500 руб.</span>
               </li>
               <li>
-                <span>New</span>
-                <button type="button">В корзину</button>
-                <button type="button">Добавить к сравнению</button>
+                <span class="visually-hidden"New</span>
+                <button type="button" class="visually-hidden">В корзину</button>
+                <button type="button" class="visually-hidden">Добавить к сравнению</button>
                 <img src="img/item-3 1.jpg" width="360" height="380" alt="item3">
-                <span>Непотопляемая селфи-палка</span>
-                <span>2 500 руб.</span>
+                <span class="item-name">Непотопляемая селфи-палка</span>
+                <span class="item-cost">2 500 руб.</span>
               </li>
               <li>
-                <span>New</span>
-                <button type="button">В корзину</button>
-                <button type="button">Добавить к сравнению</button>
+                <span class="new-item">New</span>
+                <button type="button" class="visually-hidden">В корзину</button>
+                <button type="button" class="visually-hidden">Добавить к сравнению</button>
                 <img src="img/item-4 1.jpg" width="360" height="380" alt="item4">
-                <span>Селфи-палка «Следуй за мной»</span>
-                <span>4 900 руб.</span>
+                <span class="item-name">Селфи-палка «Следуй за мной»</span>
+                <span class="item-cost">4 900 руб.</span>
               </li>
             </ul>
 
@@ -176,14 +176,14 @@
 
     <footer>
 
-        <section>
+        <section class="footer-top-row">
           <a href="">
             <span class="visually-hidden">Логотип</span>
-            <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="logo">
+            <img src="img/svg-device/logo-device.svg" class="footer-logo" width="163" height="35" alt="logo">
           </a>
           <ul>
             <li>
-              <a href="">Валентин Петухов</a>
+              <a href="" class="footer-user">Валентин Петухов</a>
               <button type="button">Выйти</button>
             </li>
             <li>
@@ -195,7 +195,7 @@
           </ul>
         </section>
   
-        <section>
+        <section class="footer-middle-row">
           <address>г. Москва, ул. Строителей, 15</address>
           <ul>
             <li>
@@ -208,16 +208,16 @@
               <a href="#">Контакты</a> 
             </li>
           </ul>
-          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          <a href="tel:+74954959595" class="phone-number">Тел.: +7 (495) 495-95-95</a>
         </section>
   
-        <section>
+        <section class="footer-bottom-row">
           <ul>
             <li><a href="#"><span class="visually-hidden">Наш facebook</span><img src="#" alt="facebook"></a></li>
             <li><a href="#"><span class="visually-hidden">Наш instagram</span><img src="#" alt="instagram"></a></li>
             <li><a href="#"><span class="visually-hidden">Наш twitter</span><img src="#" alt="twitter"></a></li>
           </ul>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="HTMLacademy"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo"><img src="#" alt="HTMLacademy"></a>
         </section>
   
     </footer>

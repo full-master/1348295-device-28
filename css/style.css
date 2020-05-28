@@ -1,0 +1,281 @@
+/* ____________________global_______________ */
+:root{
+    --basic-black: #000000;
+    --basic-dark: #363636;
+    --basic-gray: #464646;
+    --basic-half-gray: #7E7E7E;
+    --basic-gray-light: #E5E5E5;
+    --basic-white: #FFFFFF;
+  
+    --special-green: #91C92F;
+    --special-yellow-dark: #F7E296;
+    --special-yellow: #F7E296;
+}
+@font-face{
+    font-family: "gilroy_extrabold";
+    src: url("gilroyextrabold.woff2") format("woff2"),
+    url("gilroyextrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face{
+    font-family: "gilroy_light";
+    src: url("gilroylight.woff2") format("woff2"),
+    url("gilroylight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family: "opensans_normal";
+    src: url("opensans.woff2") format("woff2"),
+    url("opensans.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: "opensans_light";
+    src: url("opensanslight.woff2") format("woff2"),
+    url("opensanslight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    min-width: 1460px;
+    margin: 0;
+    padding: 0;
+    font-family: Gilroy;
+    font-weight: 800;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+} 
+img{
+    max-width: 100%;
+    height: auto;
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* _________________common_____________ */
+header{
+    background-color: var(--special-yellow);
+}
+.header-logo:hover, .right-section button:hover, nav a:hover, .footer-top-row button:hover, footer .footer-middle-row ul li a:hover{
+    opacity: 60%;
+}
+.header-logo:active, .right-section button:active, nav a:active, .footer-top-row button:active, footer .footer-middle-row ul li a:active{
+    opacity: 30%;
+}
+.left-section input{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: auto;
+    letter-spacing: 0%;
+    opacity: 30%;
+}
+.left-section input:hover{
+    opacity: 60%;
+}
+.left-section input:focus{
+    opacity: 100%;
+}
+.right-section button{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: auto;
+    letter-spacing: 0%;
+}
+nav a{
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 10%;
+}
+footer{
+    background-color: var(--basic-dark);
+}
+.footer-logo:hover{
+    opacity: 60%;
+}
+.footer-logo:active{
+    opacity: 30%;
+}
+.footer-top-row button{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: auto;
+    letter-spacing: 0%;
+    color: var(--basic-white);
+    background-color: var(--basic-dark);
+    opacity: 70%;
+}
+.footer-top-row button:hover{
+    opacity: 100%;
+}
+.footer-top-row button:active{
+    opacity: 30%;
+}
+.footer-middle-row address{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: auto;
+    letter-spacing: 0%;
+    font-style: normal;
+    color: var(--basic-white);
+}
+.footer-middle-row ul li a{
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 20%;
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+.phone-number{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: auto;
+    letter-spacing: 0%;
+    color: var(--basic-white);
+    text-transform: none;
+}
+.footer-bottom-row a{
+    background-color: var(--basic-white);
+    opacity: 30%;
+}
+.footer-bottom-row a:hover{
+    opacity: 60%;
+}
+.footer-bottom-row a:active{
+    opacity: 10%;
+}
+.academy-logo{
+    background-color: var(--special-yellow-dark);
+    opacity: 100%;
+}
+.academy-logo{
+    opacity: 60%;
+}
+.academy-logo{
+    opacity: 30%;
+}
+/* _______________________index_____________ */
+.contacts h2, .about-us h2{
+    font-size: 47px;
+    line-height: 100%;
+    letter-spacing: 20%;
+}
+.contacts p, .about-us p{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+.about-us li{
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+.contacts a, .about-us a{
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 20%;
+    text-transform: uppercase;
+    background-color: var(--special-yellow-dark);
+}
+.contacts a:active, .about-us a:active{
+    opacity: 60%;
+}
+/* _______________________catalog______ */
+.top-user{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: auto;
+    letter-spacing: 0%;
+}
+.main-header h1{
+    font-size: 47px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.main-header ul li a{
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: auto;
+    letter-spacing: 0%;
+    opacity: 30%;
+}
+.main-header ul li a:hover{
+    opacity: 60%;
+}
+.main-header ul li a:active{
+    opacity: 10%;
+}
+aside{
+    background-color: var(--basic-gray-light);
+}
+.aside-form label{
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 10%;
+}
+.aside-form form div li{
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: auto;
+    letter-spacing: 0%;
+}
+.aside-form form input{
+    font-family: Gilroy;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 20%;
+    text-transform: uppercase;
+    background-color: var(--special-yellow-dark);
+}
+.item-name{
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 5%;
+}
+.item-cost{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 5%;
+}
+.new-item{
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 30%;
+    text-transform: uppercase;
+}
+.footer-user{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: auto;
+    letter-spacing: 0%;
+    color: var(--basic-white);
+    opacity: 70%;
+}
