@@ -12,30 +12,30 @@
     --special-yellow: #F7E296;
 }
 @font-face{
-    font-family: "gilroy_extrabold";
-    src: url("gilroyextrabold.woff2") format("woff2"),
+    font-family: "Gilroy";
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
     url("gilroyextrabold.woff") format("woff");
     font-weight: 800;
     font-style: normal;
 }
 @font-face{
-    font-family: "gilroy_light";
-    src: url("gilroylight.woff2") format("woff2"),
+    font-family: "Gilroy";
+    src: url("../fonts/gilroylight.woff2") format("woff2"),
     url("gilroylight.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
 @font-face{
-    font-family: "opensans_normal";
-    src: url("opensans.woff2") format("woff2"),
-    url("opensans.woff") format("woff");
+    font-family: "Open Sans";
+    src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
 @font-face{
-    font-family: "opensans_light";
-    src: url("opensanslight.woff2") format("woff2"),
-    url("opensanslight.woff") format("woff");
+    font-family: "Open Sans";
+    src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
@@ -43,8 +43,8 @@ body{
     min-width: 1460px;
     margin: 0;
     padding: 0;
-    font-family: Gilroy;
-    font-weight: 800;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
     color: var(--basic-black);
     background-color: var(--basic-white);
     background-position: top center;
@@ -52,6 +52,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: var(--basic-black);
 } 
 img{
     max-width: 100%;
@@ -78,12 +79,13 @@ header{
     opacity: 30%;
 }
 .left-section input{
-    font-family: Open Sans;
-    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: normal;
     font-weight: 300;
-    line-height: auto;
-    letter-spacing: 0%;
-    opacity: 30%;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: rgba(0, 0, 0, 0.3);
 }
 .left-section input:hover{
     opacity: 60%;
@@ -92,16 +94,21 @@ header{
     opacity: 100%;
 }
 .right-section button{
-    font-family: Open Sans;
-    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: normal;
     font-weight: 300;
-    line-height: auto;
-    letter-spacing: 0%;
+    font-size: 15px;
+    line-height: 20px;
 }
 nav a{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
     font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 10%;
+    line-height: 22px;
+    
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 footer{
     background-color: var(--basic-dark);
@@ -113,14 +120,13 @@ footer{
     opacity: 30%;
 }
 .footer-top-row button{
-    font-family: Open Sans;
-    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: normal;
     font-weight: 300;
-    line-height: auto;
-    letter-spacing: 0%;
-    color: var(--basic-white);
-    background-color: var(--basic-dark);
-    opacity: 70%;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: rgba(255, 255, 255, 0.7);
 }
 .footer-top-row button:hover{
     opacity: 100%;
@@ -129,29 +135,31 @@ footer{
     opacity: 30%;
 }
 .footer-middle-row address{
-    font-family: Open Sans;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: auto;
-    letter-spacing: 0%;
+    font-family: "Open Sans";
     font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
     color: var(--basic-white);
 }
 .footer-middle-row ul li a{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
     font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 20%;
-    color: var(--basic-white);
+    line-height: 22px;
+    
+    letter-spacing: 0.2em;
     text-transform: uppercase;
+    color: var(--basic-white);
 }
 .phone-number{
-    font-family: Open Sans;
-    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: normal;
     font-weight: 300;
-    line-height: auto;
-    letter-spacing: 0%;
+    font-size: 15px;
+    line-height: 20px;
     color: var(--basic-white);
-    text-transform: none;
 }
 .footer-bottom-row a{
     background-color: var(--basic-white);
@@ -175,51 +183,61 @@ footer{
 }
 /* _______________________index_____________ */
 .contacts h2, .about-us h2{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
     font-size: 47px;
-    line-height: 100%;
-    letter-spacing: 20%;
+    line-height: 58px;
+    letter-spacing: 0.2em;
 }
 .contacts p, .about-us p{
-    font-family: Open Sans;
-    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: normal;
     font-weight: 300;
+    font-size: 15px;
     line-height: 28px;
-    letter-spacing: 0%;
 }
 .about-us li{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
     font-size: 16px;
     line-height: 28px;
-    letter-spacing: 0%;
 }
 .contacts a, .about-us a{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
     font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 20%;
+    line-height: 22px;
+    
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    background-color: var(--special-yellow-dark);
 }
 .contacts a:active, .about-us a:active{
     opacity: 60%;
 }
 /* _______________________catalog______ */
 .top-user{
-    font-family: Open Sans;
-    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: normal;
     font-weight: 300;
-    line-height: auto;
-    letter-spacing: 0%;
+    font-size: 15px;
+    line-height: 20px;
 }
 .main-header h1{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
     font-size: 47px;
-    line-height: 100%;
-    letter-spacing: 0%;
+    line-height: 58px;
 }
 .main-header ul li a{
-    font-family: Open Sans;
-    font-size: 14px;
+    font-family: "Open Sans";
+    font-style: normal;
     font-weight: 300;
-    line-height: auto;
-    letter-spacing: 0%;
+    font-size: 14px;
+    line-height: 19px;
     opacity: 30%;
 }
 .main-header ul li a:hover{
@@ -232,50 +250,61 @@ aside{
     background-color: var(--basic-gray-light);
 }
 .aside-form label{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
     font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 10%;
+    line-height: 17px;
+    letter-spacing: 0.1em;
 }
 .aside-form form div li{
-    font-family: Open Sans;
-    font-size: 14px;
+    font-family: "Open Sans";
+    font-style: normal;
     font-weight: 300;
-    line-height: auto;
-    letter-spacing: 0%;
+    font-size: 14px;
+    line-height: 19px;
 }
 .aside-form form input{
-    font-family: Gilroy;
+    font-family: "Gilroy";
+    font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 20%;
+    line-height: 22px;
+    
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    background-color: var(--special-yellow-dark);
 }
 .item-name{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
     font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 5%;
+    line-height: 22px;
+    letter-spacing: 0.05em;
 }
 .item-cost{
-    font-size: 16px;
+    font-family: "Gilroy";
+    font-style: normal;
     font-weight: 300;
-    line-height: 100%;
-    letter-spacing: 5%;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
 }
 .new-item{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
     font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 0%;
+    line-height: 15px;
+    
     opacity: 30%;
-    text-transform: uppercase;
 }
 .footer-user{
-    font-family: Open Sans;
-    font-size: 15px;
+    font-family: "Open Sans";
+    font-style: normal;
     font-weight: 300;
-    line-height: auto;
-    letter-spacing: 0%;
+    font-size: 15px;
+    line-height: 20px;
     color: var(--basic-white);
     opacity: 70%;
 }
