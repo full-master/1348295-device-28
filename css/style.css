@@ -182,6 +182,99 @@ footer{
     opacity: 30%;
 }
 /* _______________________index_____________ */
+.ad-list div{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 179px;
+    line-height: 219px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+.ad-list h1{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+}
+.ad-list p{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+.ad-list a{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.ad-list a:active{
+    opacity: 30%;
+}
+.ad-list h2{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    
+    letter-spacing: 0.1em;
+}
+.ad-list span{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    
+    letter-spacing: 0.1em;
+}
+.categories{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+}
+.service-left button{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.service-left button:active{
+    color: var(--special-yellow);
+}
+.service-right h2{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+    
+    letter-spacing: 0.2em;
+}
+.service-right p{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+    
+    letter-spacing: 0.1em;
+}
 .contacts h2, .about-us h2{
     font-family: "Gilroy";
     font-style: normal;
@@ -246,7 +339,31 @@ footer{
 .main-header ul li a:active{
     opacity: 10%;
 }
-aside{
+.form-header, .product-sorting-header{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.form-header{
+    background-color: #dcdcdc;
+}
+.sorting-categories button{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    opacity: 30%;
+}
+.product-sorting-panel{
+    background-color: var(--basic-gray-light)
+}
+.aside-form{
     background-color: var(--basic-gray-light);
 }
 .aside-form label{
@@ -257,12 +374,18 @@ aside{
     line-height: 17px;
     letter-spacing: 0.1em;
 }
-.aside-form form div li{
+.aside-form form div li input{
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
+}
+.aside-form form div ul li input:checked:hover, .aside-form form div li input:hover{
+    opacity: 60%;
+}
+.aside-form form div ul li input:disabled:hover, .aside-form form div li input:disabled:hover{
+    opacity: 25%;
 }
 .aside-form form input{
     font-family: "Gilroy";
@@ -297,6 +420,32 @@ aside{
     font-size: 12px;
     line-height: 15px;
     
+    opacity: 30%;
+}
+.number button{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 30%;
+}
+.number button:hover{
+    opacity: 60%;
+}
+.number button:active{
+    opacity: 100%;
+}
+.back, .next{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.back:active .next:active{
     opacity: 30%;
 }
 .footer-user{
