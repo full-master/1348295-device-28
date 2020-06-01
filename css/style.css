@@ -8,7 +8,7 @@
     --basic-white: #FFFFFF;
   
     --special-green: #91C92F;
-    --special-yellow-dark: #F7E296;
+    --special-yellow-dark: #F0C52E;
     --special-yellow: #F7E296;
 }
 @font-face{
@@ -72,10 +72,10 @@ img{
 header{
     background-color: var(--special-yellow);
 }
-.header-logo:hover, .right-section button:hover, nav a:hover, .footer-top-row button:hover, footer .footer-middle-row ul li a:hover{
+.header-logo:hover, .right-section button:hover, nav a:hover, .footer-top-row button:hover, footer .footer-middle-row ul li a:hover, .sorting-categories button:hover{
     opacity: 60%;
 }
-.header-logo:active, .right-section button:active, nav a:active, .footer-top-row button:active, footer .footer-middle-row ul li a:active{
+.header-logo:active, .right-section button:active, nav a:active, .footer-top-row button:active, footer .footer-middle-row ul li a:active, .sorting-categories button:active{
     opacity: 30%;
 }
 .left-section input{
@@ -85,7 +85,9 @@ header{
     font-size: 15px;
     line-height: 20px;
     
-    color: rgba(0, 0, 0, 0.3);
+    opacity: 30%;
+    background-color: var(--special-yellow);
+    border: none;
 }
 .left-section input:hover{
     opacity: 60%;
@@ -99,6 +101,8 @@ header{
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
+    background-color: var(--special-yellow);
+    border: none;
 }
 nav a{
     font-family: 'Gilroy';
@@ -126,7 +130,10 @@ footer{
     font-size: 15px;
     line-height: 20px;
     
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--basic-white);
+    opacity: 70%;
+    background-color: var(--basic-dark);
+    border: none;
 }
 .footer-top-row button:hover{
     opacity: 100%;
@@ -244,6 +251,18 @@ footer{
     line-height: 22px;
     letter-spacing: 0.05em;
 }
+.category-block{
+    background-color: var(--special-yellow);
+}
+.category-block:hover{
+    background-color: var(--special-yellow-dark);
+}
+.category-block:active{
+    opacity: 30%;
+}
+.service{
+    background: linear-gradient(to top, var(--basic-gray-light) 71.46%, var(--basic-white) 71.46% 100%);
+}
 .service-left button{
     font-family: "Gilroy";
     font-style: normal;
@@ -253,6 +272,8 @@ footer{
     
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    border: none;
+    background-color: var(--basic-white);
 }
 .service-left button:active{
     color: var(--special-yellow);
@@ -282,6 +303,36 @@ footer{
     font-size: 47px;
     line-height: 58px;
     letter-spacing: 0.2em;
+}
+.companies-list li a{
+    width: 260px;
+    height: 100px;
+    display: block;
+    background-size: contain;
+}
+.company-1{
+    background-image: url("../img/logo-1-2.png");
+}
+.company-2{
+    background-image: url("../img/logo-2-2.png");
+}
+.company-3{
+    background-image: url("../img/logo-3-2.png");
+}
+.company-4{
+    background-image: url("../img/logo-4-2.png");
+}
+.company-1:hover{
+    background-image: url("../img/logo-1.png");
+}
+.company-2:hover{
+    background-image: url("../img/logo-2.png");
+}
+.company-3:hover{
+    background-image: url("../img/logo-3.png");
+}
+.company-4:hover{
+    background-image: url("../img/logo-4.png");
 }
 .contacts p, .about-us p{
     font-family: "Open Sans";
@@ -359,6 +410,8 @@ footer{
     font-size: 14px;
     line-height: 19px;
     opacity: 30%;
+    border: none;
+    background-color: var(--basic-gray-light);
 }
 .product-sorting-panel{
     background-color: var(--basic-gray-light)
@@ -396,6 +449,8 @@ footer{
     
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    border: none;
+    background-color: var(--basic-gray-light);
 }
 .item-name{
     font-family: "Gilroy";
@@ -422,12 +477,19 @@ footer{
     
     opacity: 30%;
 }
+.product-scroll, .product-scroll button{
+    background-color: var(--basic-gray-light);
+}
+.product-scroll button{
+    border: none;
+}
 .number button{
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
+
     opacity: 30%;
 }
 .number button:hover{
@@ -442,11 +504,16 @@ footer{
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
+
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
-.back:active .next:active{
+.back:hover, .next:hover{
+    background-color: var(--basic-gray-light);
+}
+.back:active, .next:active{
     opacity: 30%;
+    background-color: var(--basic-gray-light)
 }
 .footer-user{
     font-family: "Open Sans";
