@@ -45,10 +45,13 @@ body{
     padding: 0;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
+    font-size: 15px;
     color: var(--basic-black);
     background-color: var(--basic-white);
     background-position: top center;
     background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -57,6 +60,16 @@ a{
 img{
     max-width: 100%;
     height: auto;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
+ul, li, button, input{
+    margin: 0;
+    padding: 0;
 }
 .visually-hidden{
     position: absolute;
@@ -71,14 +84,44 @@ img{
 /* _________________common_____________ */
 header{
     background-color: var(--special-yellow);
+    width: 1160px;
+    height: 344px;
+    padding: 0;
+    margin: 20px auto 0px;
+    background: linear-gradient(to top, var(--basic-white) 7%, var(--special-yellow) 7% 94.4%, var(--basic-white) 94.4% 100%);
 }
-.header-logo:hover, .right-section button:hover, nav a:hover, .footer-top-row button:hover, footer .footer-middle-row ul li a:hover, .sorting-categories button:hover{
+.header-catalog{
+    height: 206px;
+    background: linear-gradient(to top, var(--special-yellow) 90.3%, var(--basic-white) 90.3% 100%);
+}
+.header-logo:hover, 
+.functions-right button:hover, 
+nav a:hover, 
+.footer-top-row button:hover, 
+.footer-middle-row ul li a:hover, 
+.sorting-categories button:hover{
     opacity: 60%;
 }
-.header-logo:active, .right-section button:active, nav a:active, .footer-top-row button:active, footer .footer-middle-row ul li a:active, .sorting-categories button:active{
+.header-logo:active, 
+.functions-right button:active, 
+nav a:active, 
+.footer-top-row button:active, 
+.footer-middle-row ul li a:active, 
+.sorting-categories button:active{
     opacity: 30%;
 }
-.left-section input{
+.header-logo-link{
+    margin-bottom: 29px;
+    margin-left: 60px;
+    height: 35px;
+    width: 163px;
+    display: block;
+}
+.functions{
+    margin: 0 60px;
+    display: flex;
+}
+.functions-left{
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
@@ -88,14 +131,45 @@ header{
     opacity: 30%;
     background-color: var(--special-yellow);
     border: none;
+    width: 50%;
 }
-.left-section input:hover{
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+.functions-left:hover{
     opacity: 60%;
 }
-.left-section input:focus{
+.functions-left input:focus{
     opacity: 100%;
 }
-.right-section button{
+.functions-right{
+    width: 50%;
+    text-align: right;
+}
+.exit-header{
+    margin-right: 68px;
+}
+.header-user{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 20px;
+}
+.exit-header button{
+    opacity: 30%;
+}
+.enter-header{
+    margin-right: 239px;
+}
+.functions-right li:nth-child(2){
+    margin-right: 63px;
+}
+.functions-right button{
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
@@ -103,6 +177,22 @@ header{
     line-height: 20px;
     background-color: var(--special-yellow);
     border: none;
+}
+nav{
+    margin: 50px 60px 0px;
+}
+nav{
+   display: flex;
+}
+nav ul{
+    width: 50%;
+    text-align: right;
+}
+nav ul li:nth-child(2){
+    margin-left: 38px;
+}
+nav ul li:nth-child(3){
+    margin-left: 111px;
 }
 nav a{
     font-family: 'Gilroy';
@@ -113,9 +203,43 @@ nav a{
     
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    width: 50%;
 }
 footer{
     background-color: var(--basic-dark);
+    margin-top: 86px;
+}
+.footer-catalog{
+    margin-top: 0;
+}
+.footer-top-row, 
+.footer-middle-row, 
+.footer-bottom-row{
+    display: flex;
+}
+.footer-article{
+    width: 1160px;
+    height: auto;
+    margin: 0 auto;
+    padding: 46px 0 64px;
+}
+.footer-top-row{
+    margin-bottom: 39px;
+}
+.footer-top-row a{
+    width: 50%;
+    margin-top: 18px;
+}
+.footer-top-row ul{
+    width: 50%;
+    text-align: right;
+}
+.footer-top-row ul li:nth-child(2), 
+.footer-top-row ul li:nth-child(3){
+    margin-left: 62px;
+}
+.exit-footer{
+    margin-left: 24px;
 }
 .footer-logo:hover{
     opacity: 60%;
@@ -141,6 +265,9 @@ footer{
 .footer-top-row button:active{
     opacity: 30%;
 }
+.footer-middle-row{
+    margin: 39px 0 66px;
+}
 .footer-middle-row address{
     font-family: "Open Sans";
     font-style: normal;
@@ -148,6 +275,16 @@ footer{
     font-size: 15px;
     line-height: 20px;
     color: var(--basic-white);
+    width: 20%;
+    text-align: left;
+}
+.footer-middle-row ul{
+    width: 60%;
+    text-align: center;
+}
+.footer-middle-row ul li:nth-child(1),
+.footer-middle-row ul li:nth-child(2){
+    margin-right: 36px;
 }
 .footer-middle-row ul li a{
     font-family: "Gilroy";
@@ -167,10 +304,28 @@ footer{
     font-size: 15px;
     line-height: 20px;
     color: var(--basic-white);
+    width: 20%;
+    text-align: right;
+}
+.footer-bottom-row{
+    margin-top: 66px;
+}
+.footer-bottom-row div{
+    width: 33.33%;
+}
+.footer-bottom-row ul{
+    width: 33.33%;
+    text-align: center;
+}
+.footer-bottom-row ul li:nth-child(1),
+.footer-bottom-row ul li:nth-child(2){
+    margin-right: 20px;
 }
 .footer-bottom-row a{
     background-color: var(--basic-white);
     opacity: 30%;
+    width: 33.33%;
+    text-align: right;
 }
 .footer-bottom-row a:hover{
     opacity: 60%;
@@ -334,19 +489,56 @@ footer{
 .company-4:hover{
     background-image: url("../img/logo-4.png");
 }
-.contacts p, .about-us p{
+.block-info{
+    display: flex;
+    margin: 90px auto 86px;
+    width: 1160px;
+}
+.contacts{
+    margin-left: 40px;
+    width: 50%;
+}
+.about-us{
+    width: 50%;
+}
+.contacts h2, .about-us h2{
+    margin: 50px 0;
+}
+.contacts p, .about-us-1-par, .about-us-2-par{
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
 }
-.about-us li{
+.contacts p{
+    max-width: 510px;
+    margin: 50px 0 40px;
+}
+.about-us-1-par{
+    max-width: 420px;
+    margin: 50px 0 40px;
+}
+.about-us-2-par{
+    max-width: 473px;
+    margin: 40px 0 60px;
+}
+.about-us ul li{
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 22px;
+    display: block;
+}
+.about-us li:nth-child(1), .about-us li:nth-child(2){
+    margin-bottom: 20px;
+}
+.about-us ul, .contacts img{
+    margin-bottom: 85px;
+}
+.contacts img{
+    display: block;
 }
 .contacts a, .about-us a{
     font-family: "Gilroy";
@@ -362,12 +554,9 @@ footer{
     opacity: 60%;
 }
 /* _______________________catalog______ */
-.top-user{
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 20px;
+.main-header{
+    max-width: 1040px;
+    margin: 44px auto 50px;
 }
 .main-header h1{
     font-family: "Gilroy";
@@ -375,6 +564,10 @@ footer{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
+    margin-bottom: 30px;
+}
+.main-header ul li:not(:last-child){
+    margin-right: 40px;
 }
 .main-header ul li a{
     font-family: "Open Sans";
@@ -416,16 +609,49 @@ footer{
 .product-sorting-panel{
     background-color: var(--basic-gray-light)
 }
-.aside-form{
+.products-main-container{
+    margin: 0 auto; 
+    max-width: 1460px;
+    padding: 0 10px; 
+    display: flex;
+}
+.sidebar{
+    max-width: 468px;
     background-color: var(--basic-gray-light);
 }
-.aside-form label{
+.aside-form{
+    padding: 70px 68px 520px 200px;
+}
+.aside-form div label{
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.1em;
+
+    display: block;
+    width: 200px;
+    padding-top: 14px;
+    border-top: 2px solid var(--basic-black);
+}
+.aside-form form div:nth-child(1) ul{
+    margin: 30px auto 38px;
+}
+.aside-form form div:nth-child(2) ul{
+    margin: 30px auto 37px;
+}
+.aside-form form div:nth-child(3) ul{
+    margin: 30px auto 50px;
+}
+.aside-form form div:nth-child(2) ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+.aside-form form div:nth-child(3) ul li:not(:last-child){
+    margin-bottom: 16px;
+}
+.aside-form form div li{
+    display: block;
 }
 .aside-form form div li input{
     font-family: "Open Sans";
@@ -434,13 +660,24 @@ footer{
     font-size: 14px;
     line-height: 19px;
 }
-.aside-form form div ul li input:checked:hover, .aside-form form div li input:hover{
+.aside-form form div:nth-child(1) li input{
+    width: 200px;
+}
+.aside-form form div:nth-child(2) li input{
+    margin-right: 18px;
+}
+.aside-form form div:nth-child(3) li input{
+    margin-right: 16px;
+}
+.aside-form form div ul li input:checked:hover, 
+.aside-form form div ul li input:hover{
     opacity: 60%;
 }
-.aside-form form div ul li input:disabled:hover, .aside-form form div li input:disabled:hover{
+.aside-form form div ul li input:disabled:hover, 
+.aside-form form div ul li input:disabled:hover{
     opacity: 25%;
 }
-.aside-form form input{
+.aside-button{
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 800;
@@ -452,6 +689,31 @@ footer{
     border: none;
     background-color: var(--basic-gray-light);
 }
+.products-main{
+    max-width: 972px;
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0 0 72px;
+}
+.product-list li{
+    position: relative;
+}
+.product-list li:nth-child(odd){
+    margin-right: 40px;
+}
+.item-img{
+    width: 360px;
+    height: 380px;
+    margin-bottom: 30px;
+    display: block;
+}
+.product-text{
+    max-width: 360px;
+    display: flex;
+    margin-bottom: 48px;
+}
 .item-name{
     font-family: "Gilroy";
     font-style: normal;
@@ -459,6 +721,8 @@ footer{
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.05em;
+    vertical-align: center;
+    width: 75%;
 }
 .item-cost{
     font-family: "Gilroy";
@@ -467,6 +731,8 @@ footer{
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.05em;
+    text-align: right;
+    width: 25%;
 }
 .new-item{
     font-family: "Gilroy";
@@ -474,8 +740,15 @@ footer{
     font-weight: 800;
     font-size: 12px;
     line-height: 15px;
-    
     opacity: 30%;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 29px;
+    right: 27px;
+    border: 2px solid var(--basic-gray);
+    padding: 23px 17px;
+    border-radius: 500px;
 }
 .product-scroll, .product-scroll button{
     background-color: var(--basic-gray-light);

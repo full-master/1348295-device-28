@@ -9,18 +9,15 @@
 
     <header>
 
-      <a href="">
+      <a href="" class="header-logo-link">
         <span class="visually-hidden">Логотип</span>
         <img src="img/svg-device/logo-device.svg" class="header-logo" width="163" height="35" alt="logo">
       </a>
 
-      <section class="left-section">
-        <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-      </section>
-
-      <section class="right-section">
-        <ul>
-          <li>
+      <section class="functions">
+        <input class="functions-left"  type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <ul class="functions-right">
+          <li class="enter-header">
             <button type="button">Войти</button>
           </li>
           <li>
@@ -33,10 +30,9 @@
       </section>
 
       <nav>
+
+        <a href="catalog.html">Каталог товаров</a> 
         <ul>
-          <li>
-            <a href="catalog.html">Каталог товаров</a> 
-          </li>
           <li>
             <a href="#">Доставка</a> 
           </li>
@@ -88,7 +84,7 @@
             </li>
           </ul>         
         </li>
-        <li>
+        <li class="visually-hidden">
           <div>02</div>
 
           <img src="img/slider-2 1.png" alt="fit">
@@ -114,7 +110,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li  class="visually-hidden">
           <div>03</div>
 
           <img src="img/slider-3 1.png" alt="selfie">
@@ -217,7 +213,7 @@
               заработаем, поднимая его на ваш этаж.
             </p>
           </li>
-          <li>
+          <li class="visually-hidden">
             <img src="img/svg-device/credit.svg" alt="guarantee">
             <h2>Гарантия</h2>
             <p>
@@ -226,7 +222,7 @@
               Товар, не дом, конечно же.
             </p>
           </li>
-          <li>
+          <li  class="visually-hidden">
             <img src="img/svg-device/warranty.svg" alt="credit">
             <h2>Кредит</h2>
             <p>
@@ -248,12 +244,12 @@
         </ul>
       </section>
 
-      <article>
+      <article class="block-info">
 
         <section class="about-us">
           <h2>О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <p class="about-us-1-par">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="about-us-2-par">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul>
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -288,48 +284,53 @@
 
     <footer>
 
-      <section class="footer-top-row">
-        <a href="">
-          <span class="visually-hidden">Логотип</span>
-          <img src="img/svg-device/logo-device-footer.svg" class="footer-logo" width="163" height="35" alt="logo">
-        </a>
-        <ul>
-          <li>
-            <button type="button">Войти</button>
-          </li>
-          <li>
-            <button type="button">Сравнить</button>
-          </li>
-          <li>
-            <button type="button">Корзина</button>
-          </li>
-        </ul>
-      </section>
+      <article class="footer-article">
 
-      <section class="footer-middle-row">
-        <address>г. Москва, ул. Строителей, 15</address>
-        <ul>
-          <li>
-            <a href="#">Доставка</a> 
-          </li>
-          <li>
-            <a href="#">Гарантия</a> 
-          </li>
-          <li>
-            <a href="#">Контакты</a> 
-          </li>
-        </ul>
-        <a href="tel:+74954959595" class="phone-number">Тел.: +7 (495) 495-95-95</a>
-      </section>
+        <section class="footer-top-row">
+          <a href="">
+            <span class="visually-hidden">Логотип</span>
+            <img src="img/svg-device/logo-device-footer.svg" class="footer-logo" width="163" height="35" alt="logo">
+          </a>
+          <ul>
+            <li>
+              <button type="button">Войти</button>
+            </li>
+            <li>
+              <button type="button">Сравнить</button>
+            </li>
+            <li>
+              <button type="button">Корзина</button>
+            </li>
+          </ul>
+        </section>
 
-      <section class="footer-bottom-row">
-        <ul>
-          <li><a href="#"><span class="visually-hidden">Наш facebook</span><img src="#" alt="facebook"></a></li>
-          <li><a href="#"><span class="visually-hidden">Наш instagram</span><img src="#" alt="instagram"></a></li>
-          <li><a href="#"><span class="visually-hidden">Наш twitter</span><img src="#" alt="twitter"></a></li>
-        </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="HTMLacademy"></a>
-      </section>
+        <section class="footer-middle-row">
+          <address>г. Москва, ул. Строителей, 15</address>
+          <ul>
+            <li>
+              <a href="#">Доставка</a> 
+            </li>
+            <li>
+              <a href="#">Гарантия</a> 
+            </li>
+            <li>
+              <a href="#">Контакты</a> 
+            </li>
+          </ul>
+          <a href="tel:+74954959595" class="phone-number">Тел.: +7 (495) 495-95-95</a>
+        </section>
+
+        <section class="footer-bottom-row">
+          <div></div>
+          <ul>
+            <li><a href="#"><span class="visually-hidden">Наш facebook</span><img src="#" alt="facebook"></a></li>
+            <li><a href="#"><span class="visually-hidden">Наш instagram</span><img src="#" alt="instagram"></a></li>
+            <li><a href="#"><span class="visually-hidden">Наш twitter</span><img src="#" alt="twitter"></a></li>
+          </ul>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="HTMLacademy"></a>
+        </section>
+
+      </article>
 
     </footer>
 
