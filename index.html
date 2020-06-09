@@ -17,7 +17,7 @@
       <section class="functions">
         <input class="functions-left"  type="search" name="search" id="search" placeholder="Поиск по сайту">
         <ul class="functions-right">
-          <li class="enter-header">
+          <li>
             <button type="button">Войти</button>
           </li>
           <li>
@@ -32,7 +32,7 @@
       <nav>
 
         <a href="catalog.html">Каталог товаров</a> 
-        <ul>
+        <ul class="header-service-list">
           <li>
             <a href="#">Доставка</a> 
           </li>
@@ -43,46 +43,53 @@
             <a href="#">Контакты</a> 
           </li>
         </ul>
+
       </nav>
       
-    </header>
+      <ul class="ad-list">
 
-    <main>
+        <li class="ad-item">
+          
+          <section class="left-ad-block">
 
-      <ul class="ad-list"> 
-        <li>
-          <div>01</div>
+            <img src="img/slider-1 1.png" alt="selfie">
 
-          <img src="img/slider-1 1.png" alt="selfie">
+          </section>
 
-          <h1>Делай селфи,  
-            как Бен Стиллер!</h1>
+          <section class="right-ad-block">
 
-          <p>Самая длинная палка для селфи доступна в нашем магазине. 
-            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            
-          <a href="">Подробнее</a>
+            <div>01</div>
 
-          <ul>
-            <li><button type="button"><span class="visually-hidden">Следующий слайд</span></button></li>
-            <li><button type="button"><span class="visually-hidden">Следующий слайд</span></button></li>
-            <li><button type="button"><span class="visually-hidden">Следующий слайд</span></button></li>
-          </ul>
+            <h1>Делай селфи,<br>как Бен Стиллер!</h1>
 
-          <ul>
-            <li>
-              <h2>8,5 м</h2>
-              <span>Длина палки</span>
-            </li>
-            <li>
-              <h2>5 кг</h2>
-              <span>Вес палки</span>
-            </li>
-            <li>
-              <h2>Карбон</h2>
-              <span>Материал</span>
-            </li>
-          </ul>         
+            <p>Самая длинная палка для селфи доступна в нашем магазине. 
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              
+            <a href="">Подробнее</a>
+
+            <ul class="ad-scroll">
+              <li><button type="button"><span class="visually-hidden">Следующий слайд</span></button></li>
+              <li><button type="button"><span class="visually-hidden">Следующий слайд</span></button></li>
+              <li><button type="button"><span class="visually-hidden">Следующий слайд</span></button></li>
+            </ul>
+
+            <ul class="features">
+              <li>
+                <h2>8,5 м</h2>
+                <span>Длина палки</span>
+              </li>
+              <li>
+                <h2>5 кг</h2>
+                <span>Вес палки</span>
+              </li>
+              <li>
+                <h2>Карбон</h2>
+                <span>Материал</span>
+              </li>
+            </ul>         
+
+          </section>  
+
         </li>
         <li class="visually-hidden">
           <div>02</div>
@@ -142,6 +149,10 @@
         </li>
       </ul>
 
+    </header>
+
+    <main>
+
       <section class="categories">
         <ul>
           <li>
@@ -149,7 +160,7 @@
               <div class="category-block">
                 <img src="img/svg-device/popular-1.svg" alt="vr">
               </div>
-              <h3>Виртуальная реальность</h3>
+              <span>Виртуальная реальность</span>
             </a>
           </li>
           <li>
@@ -157,7 +168,7 @@
               <div class="category-block">
                 <img src="img/svg-device/popular-2.svg" alt="m">
               </div>
-              <h3>Моноподы для селфи</h3>
+              <span>Моноподы <br>для селфи</span>
             </a>
           </li>
           <li>
@@ -165,7 +176,7 @@
               <div class="category-block">
                 <img src="img/svg-device/popular-3.svg" alt="action-camera">
               </div>
-              <h3>Экшн-камеры</h3>
+              <span>Экшн-камеры</span>
             </a>
           </li>
           <li>
@@ -173,7 +184,7 @@
               <div class="category-block">
                 <img src="img/svg-device/popular-4.svg" alt="fit">
               </div>
-              <h3>Фитнес-браслеты</h3>
+              <span class="without-letterspasing">Фитнес-браслеты</span>
             </a>
           </li>
           <li>
@@ -181,7 +192,7 @@
               <div class="category-block">
                 <img src="img/svg-device/popular-5.svg" alt="smartclock">
               </div>
-              <h3>Умные часы</h3>
+              <span>Умные часы</span>
             </a>
           </li>
           <li>
@@ -189,7 +200,7 @@
               <div class="category-block">
                 <img src="img/svg-device/popular-6.svg" alt="q">
               </div>
-              <h3>Квадрокоптеры</h3>
+              <span>Квадрокоптеры</span>
             </a>
           </li>
         </ul>
@@ -205,13 +216,13 @@
 
         <ul class="service-right">
           <li>
-            <img src="img/svg-device/delivery.svg" alt="delivery">
             <h2>Доставка</h2>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему 
               подъезду совершенно бесплатно! Ведь мы неплохо 
               заработаем, поднимая его на ваш этаж.
             </p>
+            <img src="img/svg-device/delivery.svg" alt="delivery">
           </li>
           <li class="visually-hidden">
             <img src="img/svg-device/credit.svg" alt="guarantee">
@@ -235,8 +246,8 @@
 
       </section>
 
-      <section>
-        <ul class="companies-list">
+      <section class="companies-list">
+        <ul>
           <li><a href="#" class="company-1"><span class="visually-hidden">Производитель dji</span></a></li>
           <li><a href="#" class="company-2"><span class="visually-hidden">Производитель spgadgets</span></a></li>
           <li><a href="#" class="company-3"><span class="visually-hidden">Производитель GoPro</span></a></li>
