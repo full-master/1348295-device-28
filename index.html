@@ -15,24 +15,29 @@
       </a>
 
       <section class="functions">
-        <input class="functions-left"  type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <div class="functions-left">
+          <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+        </div>
         <ul class="functions-right">
           <li>
-            <button type="button">Войти</button>
+            <button type="button" class="functions-button-1">Войти</button>
           </li>
           <li>
-            <button type="button">Сравнить</button>
+            <button type="button" class="functions-button-2">Сравнить</button>
           </li>
           <li>
-            <button type="button">Корзина</button>
+            <button type="button" class="functions-button-3">Корзина</button>
           </li>
         </ul>
       </section>
 
       <nav>
 
-        <a href="catalog.html">Каталог товаров</a> 
-        <ul class="header-service-list">
+        <div class="nav-cat-link">
+          <a href="catalog.html">Каталог товаров</a> 
+        </div>
+
+        <ul class="nav-service-list">
           <li>
             <a href="#">Доставка</a> 
           </li>
@@ -258,6 +263,7 @@
       <article class="block-info">
 
         <section class="about-us">
+          <hr>
           <h2>О нас</h2>
           <p class="about-us-1-par">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="about-us-2-par">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -270,23 +276,40 @@
         </section>
 
         <section class="contacts">
+          <hr>
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <img src="img/map 1.jpg" alt="map">
-          <img src="img/map-big 1.jpg" alt="map" class="visually-hidden">
+          <div class="map-window">
+            <div>
+              <button type="button"></button>
+            </div>
+            <img src="img/map-big 1.png" alt="map">
+          </div>
           <a href="">Напишите нам</a>
-          <form action="" method="post" class="visually-hidden">
-            <fieldset>
-              <legend></legend>
-              <label for="name">Ваше имя:</label>
-              <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-              <label for="email">Ваш e-mail:</label>
-              <input type="email" name="email" placeholder="email@example.com" required>
-              <label for="letter">Текст письма:</label>
-              <textarea name="letter" id="letter"  placeholder="В свободной форме"></textarea>
-              <input type="submit" value="Отправить">
-            </fieldset>
-          </form>
+          <div class="form-window">
+            <div class="form-window-close">
+              <button type="button"></button>
+            </div>
+            <form action="" method="post">
+              <fieldset>
+                <legend></legend>
+                <section>
+                  <div>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+                  </div>
+                  <div class="form-window-email">
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="email" name="email" placeholder="email@example.com" required>
+                  </div>
+                </section>
+                <label for="letter">Текст письма:</label>
+                <textarea name="letter" id="letter"  placeholder="В свободной форме"></textarea>
+                <input type="submit" value="Отправить" class="form-submit">
+              </fieldset>
+            </form>
+          </div>
         </section>
 
       </article>  
@@ -298,19 +321,21 @@
       <article class="footer-article">
 
         <section class="footer-top-row">
-          <a href="">
-            <span class="visually-hidden">Логотип</span>
-            <img src="img/svg-device/logo-device-footer.svg" class="footer-logo" width="163" height="35" alt="logo">
-          </a>
+          <div class="footer-logo">
+            <a href="">
+              <span class="visually-hidden">Логотип</span>
+              <img src="img/svg-device/logo-device-footer.svg" width="163" height="35" alt="logo">
+            </a>
+          </div>
           <ul>
             <li>
-              <button type="button">Войти</button>
+              <button type="button" class="footer-top-row-button-1">Войти</button>
             </li>
             <li>
-              <button type="button">Сравнить</button>
+              <button type="button" class="footer-top-row-button-2">Сравнить</button>
             </li>
             <li>
-              <button type="button">Корзина</button>
+              <button type="button" class="footer-top-row-button-3">Корзина</button>
             </li>
           </ul>
         </section>
@@ -328,17 +353,23 @@
               <a href="#">Контакты</a> 
             </li>
           </ul>
-          <a href="tel:+74954959595" class="phone-number">Тел.: +7 (495) 495-95-95</a>
+          <div class="phone-number">
+            <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          </div>
         </section>
 
         <section class="footer-bottom-row">
-          <div></div>
-          <ul>
-            <li><a href="#"><span class="visually-hidden">Наш facebook</span><img src="#" alt="facebook"></a></li>
-            <li><a href="#"><span class="visually-hidden">Наш instagram</span><img src="#" alt="instagram"></a></li>
-            <li><a href="#"><span class="visually-hidden">Наш twitter</span><img src="#" alt="twitter"></a></li>
+          <div>
+            <hr>
+          </div>
+          <ul class="social-links">
+            <li><a href="#"><span class="visually-hidden">Наш facebook</span><img src="img/svg-device/fb.svg" alt="facebook"></a></li>
+            <li><a href="#"><span class="visually-hidden">Наш instagram</span><img src="img/svg-device/instagram.svg" alt="instagram"></a></li>
+            <li><a href="#"><span class="visually-hidden">Наш twitter</span><img src="img/svg-device/twitter.svg" alt="twitter"></a></li>
           </ul>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="HTMLacademy"></a>
+          <div class="academy-logo">
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg-device/logo-html.svg" alt="HTMLacademy"></a>
+          </div>
         </section>
 
       </article>
