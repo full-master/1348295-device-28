@@ -530,17 +530,61 @@ footer{
     
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    padding: 0 42px 0 44px;
+    background: linear-gradient(to top, var(--basic-white) 31.81%, var(--special-yellow-dark) 31.81% 68.17%, var(--basic-white) 68.17% 100%);
+}
+.ad-list a:hover{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background: linear-gradient(to top, var(--special-yellow-dark) 0% 100%);
 }
 .ad-list a:active{
     opacity: 30%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background: linear-gradient(to top, var(--special-yellow-dark) 0% 100%);
 }
 .ad-scroll{
     display: inline;
     position: absolute;
-    right: 0;
+    right: 41px;
+}
+.ad-scroll li{
+    position: relative;
 }
 .ad-scroll li:not(:last-child){
     margin-right: 18px;
+}
+.ad-scroll button{
+    width: 23px;
+    height: 23px;
+    border: none;
+    background-color: var(--basic-white);
+}
+.ad-scroll-button-1::after{
+    content: "";
+    position: absolute;
+    top: -7px;
+    right: 11.5px;
+  
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/svg-device/slider-button.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.ad-scroll-button-2::after,
+.ad-scroll-button-3::after{
+    content: "";
+    position: absolute;
+    top: -7px;
+    right: 11.5px;
+  
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/svg-device/slider-button-empty.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 .ad-list h2{
     font-family: "Gilroy";
@@ -624,26 +668,29 @@ footer{
     letter-spacing: 0em;
 }
 .service{
-    max-width: 1440px;
-    margin: 49px auto 90px;
-    display: flex;
+    width: 100%;
     background: linear-gradient(to top, var(--basic-gray-light) 71.46%, var(--basic-white) 71.46% 100%);
 }
+.container-service{
+    max-width: 1460px;
+    padding: 0 10px;
+    margin: 49px auto 90px;
+    display: flex;
+}
 .service-left{
-    padding:  89px 162px 86px 0;
-    margin: 15px 0 68px 140px;
+    width: 278px;
+    height: 320px;
+    padding-top: 89px;
+    margin: 15px 0 0 140px;
     border-right: 7px solid var(--basic-black);
 }
 .service-left li{
     display: block;
 }
 .service-left li:nth-child(1){
-    margin-bottom: 39px;
+    background-color: var(--basic-black);
+    padding: 9px 0 9px 19px;
 }
-.service-left li:nth-child(2){
-    margin-bottom: 40px;
-}
-
 .service-left button{
     font-family: "Gilroy";
     font-style: normal;
@@ -654,10 +701,32 @@ footer{
     letter-spacing: 0.2em;
     text-transform: uppercase;
     border: none;
-    background-color: var(--basic-gray-light);
 }
-.service-left button:active{
+.service-left-button-1{
+    background: linear-gradient(to top, var(--basic-black) 0% 100%);
     color: var(--special-yellow);
+}
+.service-left-button-2{
+    background: linear-gradient(to top, var(--basic-gray-light) 31.81%, var(--special-yellow-dark) 31.81% 68.17%, var(--basic-gray-light) 68.17% 100%);
+    padding: 0 24px;
+    margin: 30px 0 15px 0;
+}
+.service-left-button-3{
+    background: linear-gradient(to top, var(--basic-gray-light) 31.81%, var(--special-yellow-dark) 31.81% 68.17%, var(--basic-gray-light) 68.17% 100%);
+    padding: 0 38px;
+    margin-top: 15px;
+}
+.service-left-button-2:hover,
+.service-left-button-3:hover{
+    background: linear-gradient(to top, var(--special-yellow-dark) 0% 100%);
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.service-left-button-2:hover{
+    margin: 21px 0 6px 0;
+}
+.service-left-button-3:hover{
+    margin-top: 6px;
 }
 .service-right{
     width: 758px;
@@ -1006,6 +1075,12 @@ footer{
     font-size: 15px;
     line-height: 20px;
 }
+.cat-list a:hover{
+    opacity: 60%;
+}
+.cat-list a:active{
+    opacity: 30%;
+}
 .main-header{
     max-width: 1060px;
     padding: 0 10px;
@@ -1084,7 +1159,11 @@ footer{
     background-color: var(--basic-gray-light)
 }
 .products-main-container{
-    margin: 50px auto 0; 
+    width: 100%;
+    margin-top: 50px; 
+}
+.products-container{
+    margin: 0 auto; 
     max-width: 1460px;
     padding: 0 10px; 
     display: flex;
@@ -1112,7 +1191,7 @@ footer{
     padding-top: 14px;
     border-top: 2px solid var(--basic-black);
 }
-.aside-form label{
+.aside-form fieldset:not(:first-child) label{
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
@@ -1123,6 +1202,85 @@ footer{
     display: block;
     margin-left: 42px;
 }
+
+  
+.range-filter{
+    width: 200px;
+    margin-top: 39px;
+    margin-bottom: 38px;
+}
+.filter-item legend{
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+} 
+.range-controls{
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 17px;
+}
+.range-controls .scale{
+    height: 2px;
+    background: #d7dcde;
+}
+.range-controls .bar{
+    width: 60%;
+    height: 2px;
+    background: var(--special-green);
+}
+.range-controls .toggle{
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 20px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: var(--basic-gray-light);
+}
+.range-controls .toggle::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 23px;
+
+    background-image: url("../img/svg-device/filter-button.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+/* .range-controls .toggle-min{
+    
+} */
+.range-controls .toggle-max{
+    left: 110px;
+} 
+/* .price-controls{
+
+} */
+.price-controls label{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+.price-controls input{
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    width: 60px;
+    padding: 2px;
+    border: none;
+    background-color: var(--basic-gray-light);
+}
+
+
+
 .aside-form fieldset:nth-child(2) input + label::before{
     content: "";
     position: absolute;
@@ -1247,7 +1405,45 @@ footer{
     margin-right: 30px;
 }
 .buttons-sorting-categories{
-    margin-left: 219px;
+    margin-left: 206px;
+    position: relative;
+}
+.buttons-sorting-categories button{
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-color: var(--basic-gray-light);
+}
+.button-sorting-categories-1{
+    margin-right: 16px;
+    opacity: 30%;
+}
+.button-sorting-categories-1::after,
+.button-sorting-categories-2::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+
+    width: 11px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.button-sorting-categories-1::after{
+    left: 3.5px;
+    background-image: url("../img/svg-device/icon-up-dir.svg");
+}
+.button-sorting-categories-2::after{
+    right: 3.5px;
+    background-image: url("../img/svg-device/icon-down-dir.svg");
+}
+.button-sorting-categories-1:hover,
+.button-sorting-categories-2:hover{
+    opacity: 60%;
+}
+.button-sorting-categories-1:active,
+.button-sorting-categories-2:active{
+    opacity: 100%;
 }
 .product-list{
     display: flex;
@@ -1311,10 +1507,9 @@ footer{
     max-width: 760px;
     margin: 40px 140px 78px 72px;
     display: flex;
-    padding: 25px 30px;
 }
 .product-scroll, .product-scroll button{
-    background-color: var(--basic-gray-light);
+    background-color: #EBEBEB;
 }
 .product-scroll button{
     border: none;
@@ -1322,9 +1517,10 @@ footer{
 .number{
     width: 33.33%;
     text-align: center;
+    padding: 20px 0;
 }
 .number li:not(:last-child){
-    margin-right: 30px;
+    margin-right: 20px;
 }
 .number button{
     font-family: "Gilroy";
@@ -1333,6 +1529,13 @@ footer{
     font-size: 16px;
     line-height: 20px;
 
+    padding: 5px;
+}
+.product-scroll-button-1{
+    opacity: 100%;
+}
+.product-scroll-button-2,
+.product-scroll-button-3{
     opacity: 30%;
 }
 .number button:hover{
@@ -1341,7 +1544,7 @@ footer{
 .number button:active{
     opacity: 100%;
 }
-.back, .next{
+.back button, .next button{
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 800;
@@ -1350,20 +1553,21 @@ footer{
 
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    width: 33.33%;
+    padding: 25px 30px;
 }
 .back{
     text-align: left;
+    width: 33.33%;
 }
 .next{
     text-align: right;
+    width: 33.33%;
 }
-.back:hover, .next:hover{
-    background-color: var(--basic-gray-light);
+.back button:hover, .next button:hover{
+    background-color: #D9D9D9;
 }
-.back:active, .next:active{
+.back button:active, .next button:active{
     opacity: 30%;
-    background-color: var(--basic-gray-light)
 }
 .footer-user{
     font-family: "Open Sans";
