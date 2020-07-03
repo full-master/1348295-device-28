@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru"> 
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -52,7 +52,7 @@
 
       </nav>    
 
-      <section class="cat-list">
+      <section class="cat-list visually-hidden">
 
         <ul>
           <li>
@@ -183,9 +183,9 @@
                 <section class="product-sorting-panel">
                   <div class="product-sorting-header">Сортировка:</div>
                   <ul class="sorting-categories">
-                    <li><button type="button">По цене</button></li>
-                    <li><button type="button">По типу</button></li>
-                    <li><button type="button">По популярности</button></li>
+                    <li><button type="button" class="sorting-categories-button-selected">По цене</button></li>
+                    <li><button type="button" class="sorting-categories-button">По типу</button></li>
+                    <li><button type="button" class="sorting-categories-button">По популярности</button></li>
                   </ul>
                   <ul class="buttons-sorting-categories">
                     <li><button class="button-sorting-categories-1" type="button"><span class="visually-hidden">Сортировка по убыванию</span></button></li>
@@ -195,9 +195,11 @@
 
                 <ul class="product-list">
                   <li>
-                    <span class="visually-hidden">New</span>
-                    <button type="button" class="visually-hidden">В корзину</button>
-                    <button type="button" class="visually-hidden">Добавить к сравнению</button>
+                    <span class="new-item visually-hidden">New</span>
+                    <div class="product-hover visually-hidden">
+                      <button type="button" class="product-hover-button-1">В корзину</button>
+                      <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
+                    </div>
                     <img src="img/item-1 1.jpg" class="item-img" alt="item1">
                     <div class="product-text">
                       <span class="item-name">Любительская селфи-палка</span>
@@ -205,9 +207,11 @@
                     </div>
                   </li>
                   <li>
-                    <span class="visually-hidden">New</span>
-                    <button type="button" class="visually-hidden">В корзину</button>
-                    <button type="button" class="visually-hidden">Добавить к сравнению</button>
+                    <span class="new-item visually-hidden">New</span>
+                    <div class="product-hover visually-hidden">
+                      <button type="button" class="product-hover-button-1">В корзину</button>
+                      <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
+                    </div>
                     <img src="img/item-2 1.jpg" class="item-img" alt="item2">
                     <div class="product-text">
                       <span class="item-name">Профессиональная <br>селфи-палка</span>
@@ -215,21 +219,25 @@
                     </div>
                   </li>
                   <li>
-                    <span class="visually-hidden">New</span>
-                    <button type="button" class="visually-hidden">В корзину</button>
-                    <button type="button" class="visually-hidden">Добавить к сравнению</button>
+                    <span class="new-item visually-hidden">New</span>
+                    <div class="product-hover visually-hidden">
+                      <button type="button" class="product-hover-button-1">В корзину</button>
+                      <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
+                    </div>
                     <img src="img/item-3 1.jpg" class="item-img" alt="item3">
-                    <div class="product-text">
+                    <div class="product-text-bottom">
                       <span class="item-name">Непотопляемая селфи-палка</span>
                       <span class="item-cost">2 500 руб.</span>
                     </div>
                   </li>
                   <li>
                     <span class="new-item">New</span>
-                    <button type="button" class="visually-hidden">В корзину</button>
-                    <button type="button" class="visually-hidden">Добавить к сравнению</button>
+                    <div class="product-hover visually-hidden">
+                      <button type="button" class="product-hover-button-1">В корзину</button>
+                      <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
+                    </div>
                     <img src="img/item-4 1.jpg" class="item-img" alt="item4">
-                    <div class="product-text">
+                    <div class="product-text-bottom">
                       <span class="item-name">Селфи-палка «Следуй за <br>мной»</span>
                       <span class="item-cost">4 900 руб.</span>
                     </div>
@@ -238,7 +246,7 @@
 
                 <section class="product-scroll">
                     <div class="back">
-                      <button type="button"">Назад</button>
+                      <button type="button">Назад</button>
                     </div>
                     <ul class="number">
                         <li><button class="product-scroll-button-1" type="button">1</button></li>
