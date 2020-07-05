@@ -16,7 +16,12 @@
 
       <section class="functions">
         <div class="functions-left">
+          <label for="search" class="visually-hidden">Поиск</label>
           <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+          <div class="element-display-none">
+            <button type="submit">Найти</button>
+            <hr>
+          </div>
         </div>
         <ul class="functions-right">
           <li>
@@ -52,7 +57,7 @@
 
       </nav>    
 
-      <section class="cat-list visually-hidden">
+      <section class="cat-list element-display-none">
 
         <ul>
           <li>
@@ -87,22 +92,22 @@
 
     <main>
         
-        <section class="main-header">
-            <h1>Моноподы для селфи</h1>
-            <ul>
-                <li>
-                    <a href="index.html">Главная</a> 
-                </li>
-                <li>
-                    <a href="">Каталог товаров</a> 
-                </li>
-                <li>
-                    <a href="">Моноподы для селфи</a>
-                </li>
-            </ul>
-        </section>
+      <section class="main-header">
+        <h1>Моноподы для селфи</h1>
+        <ul>
+          <li>
+            <a href="index.html">Главная</a> 
+          </li>
+          <li>
+            <a href="">Каталог товаров</a> 
+          </li>
+          <li>
+            <a href="">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </section>
 
-        <div class="products-main-container"></div>
+      <div class="products-main-container">
           
           <div class="products-container">
 
@@ -195,51 +200,51 @@
 
                 <ul class="product-list">
                   <li>
-                    <span class="new-item visually-hidden">New</span>
-                    <div class="product-hover visually-hidden">
+                    <span class="new-item element-display-none">New</span>
+                    <div class="product-hover element-display-none">
                       <button type="button" class="product-hover-button-1">В корзину</button>
                       <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
                     </div>
-                    <img src="img/item-1 1.jpg" class="item-img" alt="item1">
+                    <img src="img/item-1-1.jpg" class="item-img" alt="товар-1"  width="360" height="380">
                     <div class="product-text">
                       <span class="item-name">Любительская селфи-палка</span>
-                      <span class="item-cost">500 руб.</span>
+                      <span class="item-cost item-cost-1">500 руб.</span>
                     </div>
                   </li>
                   <li>
-                    <span class="new-item visually-hidden">New</span>
-                    <div class="product-hover visually-hidden">
+                    <span class="new-item element-display-none">New</span>
+                    <div class="product-hover element-display-none">
                       <button type="button" class="product-hover-button-1">В корзину</button>
                       <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
                     </div>
-                    <img src="img/item-2 1.jpg" class="item-img" alt="item2">
+                    <img src="img/item-2-1.jpg" class="item-img" alt="товар-2"  width="360" height="380">
                     <div class="product-text">
                       <span class="item-name">Профессиональная <br>селфи-палка</span>
-                      <span class="item-cost">1 500 руб.</span>
+                      <span class="item-cost item-cost-2">1 500 руб.</span>
                     </div>
                   </li>
                   <li>
-                    <span class="new-item visually-hidden">New</span>
-                    <div class="product-hover visually-hidden">
+                    <span class="new-item element-display-none">New</span>
+                    <div class="product-hover element-display-none">
                       <button type="button" class="product-hover-button-1">В корзину</button>
                       <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
                     </div>
-                    <img src="img/item-3 1.jpg" class="item-img" alt="item3">
+                    <img src="img/item-3-1.jpg" class="item-img" alt="товар-3"  width="360" height="380">
                     <div class="product-text-bottom">
                       <span class="item-name">Непотопляемая селфи-палка</span>
-                      <span class="item-cost">2 500 руб.</span>
+                      <span class="item-cost item-cost-3">2 500 руб.</span>
                     </div>
                   </li>
                   <li>
-                    <span class="new-item">New</span>
-                    <div class="product-hover visually-hidden">
+                    <span class="new-item element-display-none">New</span>
+                    <div class="product-hover element-display-none">
                       <button type="button" class="product-hover-button-1">В корзину</button>
                       <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
                     </div>
-                    <img src="img/item-4 1.jpg" class="item-img" alt="item4">
+                    <img src="img/item-4-1.jpg" class="item-img" alt="товар-4"  width="360" height="380">
                     <div class="product-text-bottom">
                       <span class="item-name">Селфи-палка «Следуй за <br>мной»</span>
-                      <span class="item-cost">4 900 руб.</span>
+                      <span class="item-cost item-cost-4">4 900 руб.</span>
                     </div>
                   </li>
                 </ul>
@@ -262,7 +267,7 @@
 
           </div>
 
-        </div>
+      </div>
 
     </main>
 
@@ -319,7 +324,7 @@
             <li><a href="#"><span class="visually-hidden">Наш twitter</span><img src="img/svg-device/twitter.svg" alt="twitter"></a></li>
           </ul>
           <div class="academy-logo">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg-device/logo-html.svg" alt="HTMLacademy"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg-device/logo-html.svg" alt="HTMLacademy" width="29.943" height="34.09"></a>
           </div>
         </section>
 

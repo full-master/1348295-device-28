@@ -11,12 +11,17 @@
 
       <a href="" class="header-logo-link">
         <span class="visually-hidden">Логотип</span>
-        <img src="img/svg-device/logo-device.svg" class="header-logo" width="163" height="35" alt="logo">
+        <img src="img/svg-device/logo-device.svg" class="header-logo" width="163" height="35" alt="логотип">
       </a> 
 
       <section class="functions">
         <div class="functions-left">
+          <label for="search" class="visually-hidden">Поиск</label>
           <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+          <div class="element-display-none">
+            <button type="submit">Найти</button>
+            <hr>
+          </div>
         </div>
         <ul class="functions-right">
           <li>
@@ -51,7 +56,7 @@
 
       </nav>
       
-      <section class="cat-list visually-hidden">
+      <section class="cat-list element-display-none">
 
         <ul>
           <li>
@@ -84,128 +89,141 @@
 
       <article class="ad-list">
 
-        <section class="ad-item">
+        <ul class="ad-item-ul">
+
+          <li class="ad-item-li">
+            <section class="ad-item">
           
-          <div class="left-ad-block">
+              <div class="left-ad-block">
+    
+                <img class="ad-list-img-1" src="img/slider-1-1.png" alt="селфи-палка" width="384" height="486">
+    
+              </div>
+    
+              <div class="right-ad-block">
+    
+                <hr>
+    
+                <div class="ad-number">01</div>
+    
+                <h1>Делай селфи,<br>как Бен Стиллер!</h1>
+    
+                <p class="right-ad-block-p-1">Самая длинная палка для селфи доступна в нашем магазине. 
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  
+                <a href="">Подробнее</a>
+    
+                <ul class="ad-scroll">
+                  <li><button type="button" class="ad-scroll-button-selected"><span class="visually-hidden">Следующий слайд</span></button></li>
+                  <li><button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
+                  <li><button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
+                </ul>
+    
+                <ul class="features">
+                  <li>
+                    <h2>8,5 м</h2>
+                    <span>Длина палки</span>
+                  </li>
+                  <li>
+                    <h2>5 кг</h2>
+                    <span>Вес палки</span>
+                  </li>
+                  <li>
+                    <h2>Карбон</h2>
+                    <span class="ad-list-last-span">Материал</span>
+                  </li>
+                </ul>         
+    
+              </div>  
+    
+            </section>
+          </li>
 
-            <img class="ad-list-img-1" src="img/slider-1 1.png" alt="selfie">
+          <li class="ad-item-li element-display-none">
+            <section class="ad-item">
 
-          </div>
+              <div class="left-ad-block">
+    
+                <img class="ad-list-img-2" src="img/slider-2-1.png" alt="фитнес-браслет" width="345" height="485">
+    
+              </div>
+    
+              <div class="right-ad-block">
+    
+                <hr>
+    
+                <div class="ad-number">02</div>
+    
+                <h1>Худеем<br>правильно!</h1>
+    
+                <p class="right-ad-block-p-2">Мотивирующие фитнес-браслеты помогут найти в себе силы  
+                  не пропускать занятия и соблюдать диету.</p>
+    
+                <a href="">Подробнее</a>
+    
+                <ul class="ad-scroll">
+                  <li> <button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
+                  <li> <button type="button" class="ad-scroll-button-selected"><span class="visually-hidden">Следующий слайд</span></button></li>
+                  <li> <button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
+                </ul>
+    
+                <ul class="features">
+                  <li>
+                    <h2>48 часов</h2>
+                    <span>Без подзарядки</span>
+                  </li>
+                </ul>
+    
+              </div>
+    
+            </section>
+          </li>
 
-          <div class="right-ad-block">
+          <li class="ad-item-li element-display-none">
+            <section class="ad-item">
 
-            <hr>
-
-            <div class="ad-number">01</div>
-
-            <h1>Делай селфи,<br>как Бен Стиллер!</h1>
-
-            <p class="right-ad-block-p-1">Самая длинная палка для селфи доступна в нашем магазине. 
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <div class="left-ad-block">
+    
+                <img class="ad-list-img-3" src="img/slider-3-1.png" alt="квадракоптер" width="526" height="334">
               
-            <a href="">Подробнее</a>
+              </div>
+    
+              <div class="right-ad-block">
+    
+                <hr>
+    
+                <div class="ad-number">03</div>
+    
+                <h1>Порхает как бабочка,<br>жалит как пчела!</h1>
+    
+                <p class="right-ad-block-p-3">Этот обычный, на первый взгляд, квадрокоптер оснащен 
+                  мощным лазером, замаскированным под стандартную камеру.</p>
+                  
+                <a href="">Подробнее</a>
+    
+                <ul class="ad-scroll">
+                  <li> <button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
+                  <li> <button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
+                  <li> <button type="button" class="ad-scroll-button-selected"><span class="visually-hidden">Следующий слайд</span></button></li>
+                </ul>
+    
+                <ul class="features-3">
+                  <li>
+                    <h2>800 м</h2>
+                    <span>Дальность полета</span>
+                  </li>
+                  <li>
+                    <h2>50 м</h2>
+                    <span>Радиус поражения</span>
+                  </li>
+                </ul>
+                
+              </div>
+            </section>
+          </li>
 
-            <ul class="ad-scroll">
-              <li><button type="button" class="ad-scroll-button-selected"><span class="visually-hidden">Следующий слайд</span></button></li>
-              <li><button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
-              <li><button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
-            </ul>
+        </ul>
 
-            <ul class="features">
-              <li>
-                <h2>8,5 м</h2>
-                <span>Длина палки</span>
-              </li>
-              <li>
-                <h2>5 кг</h2>
-                <span>Вес палки</span>
-              </li>
-              <li>
-                <h2>Карбон</h2>
-                <span>Материал</span>
-              </li>
-            </ul>         
-
-          </div>  
-
-        </section>
-        <section class="ad-item visually-hidden">
-
-          <div class="left-ad-block">
-
-            <img class="ad-list-img-2" src="img/slider-2 1.png" alt="fit">
-
-          </div>
-
-          <div class="right-ad-block">
-
-            <hr>
-
-            <div class="ad-number">02</div>
-
-            <h1>Худеем<br>правильно!</h1>
-
-            <p class="right-ad-block-p-2">Мотивирующие фитнес-браслеты помогут найти в себе силы  
-              не пропускать занятия и соблюдать диету.</p>
-
-            <a href="">Подробнее</a>
-
-            <ul class="ad-scroll">
-              <li> <button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
-              <li> <button type="button" class="ad-scroll-button-selected"><span class="visually-hidden">Следующий слайд</span></button></li>
-              <li> <button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
-            </ul>
-
-            <ul class="features">
-              <li>
-                <h2>48 часов</h2>
-                <span>Без подзарядки</span>
-              </li>
-            </ul>
-
-          </div>
-
-        </section>
-        <section  class="ad-item visually-hidden">
-
-          <div class="left-ad-block">
-
-            <img class="ad-list-img-3" src="img/slider-3 1.png" alt="selfie">
-          
-          </div>
-
-          <div class="right-ad-block">
-
-            <hr>
-
-            <div class="ad-number">03</div>
-
-            <h1>Порхает как бабочка,<br>жалит как пчела!</h1>
-
-            <p class="right-ad-block-p-3">Этот обычный, на первый взгляд, квадрокоптер оснащен 
-              мощным лазером, замаскированным под стандартную камеру.</p>
-              
-            <a href="">Подробнее</a>
-
-            <ul class="ad-scroll">
-              <li> <button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
-              <li> <button type="button" class="ad-scroll-button-empty"><span class="visually-hidden">Следующий слайд</span></button></li>
-              <li> <button type="button" class="ad-scroll-button-selected"><span class="visually-hidden">Следующий слайд</span></button></li>
-            </ul>
-
-            <ul class="features">
-              <li>
-                <h2>800 м</h2>
-                <span>Дальность полета</span>
-              </li>
-              <li>
-                <h2>50 м</h2>
-                <span>Радиус поражения</span>
-              </li>
-            </ul>
-            
-          </div>
-        </section>
       </article>
 
     </header>
@@ -217,7 +235,7 @@
           <li>
             <a href="#">
               <div class="category-block">
-                <img src="img/svg-device/popular-1.svg" alt="vr">
+                <img src="img/svg-device/popular-1.svg" alt="виртуальная реальность"  width="97" height="55">
               </div>
               <span>Виртуальная реальность</span>
             </a>
@@ -225,7 +243,7 @@
           <li>
             <a href="#">
               <div class="category-block">
-                <img src="img/svg-device/popular-2.svg" alt="m">
+                <img src="img/svg-device/popular-2.svg" alt="моноподы для селфи"  width="86" height="117">
               </div>
               <span>Моноподы <br>для селфи</span>
             </a>
@@ -233,7 +251,7 @@
           <li>
             <a href="#">
               <div class="category-block">
-                <img src="img/svg-device/popular-3.svg" alt="action-camera">
+                <img src="img/svg-device/popular-3.svg" alt="экшн-камеры"  width="71" height="87">
               </div>
               <span>Экшн-камеры</span>
             </a>
@@ -241,7 +259,7 @@
           <li>
             <a href="#">
               <div class="category-block">
-                <img src="img/svg-device/popular-4.svg" alt="fit">
+                <img src="img/svg-device/popular-4.svg" alt="фитнес-браслеты"  width="107" height="65">
               </div>
               <span class="without-letterspasing">Фитнес-браслеты</span>
             </a>
@@ -249,7 +267,7 @@
           <li>
             <a href="#">
               <div class="category-block">
-                <img src="img/svg-device/popular-5.svg" alt="smartclock">
+                <img src="img/svg-device/popular-5.svg" alt="умные часы"  width="56" height="98">
               </div>
               <span>Умные часы</span>
             </a>
@@ -257,7 +275,7 @@
           <li>
             <a href="#">
               <div class="category-block">
-                <img src="img/svg-device/popular-6.svg" alt="q">
+                <img src="img/svg-device/popular-6.svg" alt="квадракоптеры"  width="132" height="69">
               </div>
               <span>Квадрокоптеры</span>
             </a>
@@ -275,55 +293,39 @@
             <li><button type="button" class="service-left-button-1-3">Кредит</button></li>
           </ul>
 
-          <div class="service-right">
+          <ul class="service-right">
+
+            <li>
               <h2>Доставка</h2>
               <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему<br> 
                 подъезду совершенно бесплатно! Ведь мы неплохо<br> 
                 заработаем, поднимая его на ваш этаж.
               </p>
-              <img src="img/svg-device/delivery.svg" alt="delivery">
-          </div>
-
-        </section>
-
-        <section class="container-service visually-hidden">
-
-          <ul class="service-left">
-            <li><button type="button" class="service-left-button-2-1">Доставка</button></li>
-            <li class="service-left-selected-li"><button type="button" class="service-left-button-2-2">Гарантия</button></li>
-            <li><button type="button" class="service-left-button-2-3">Кредит</button></li>
-          </ul>
-
-          <div class="service-right">
+              <img class="service-right-1" src="img/svg-device/delivery.svg" alt="доставка"  width="136" height="164">
+            </li>
+  
+            <li class="element-display-none">
               <h2>Гарантия</h2>
               <p>
                 Если из-за возгорания купленного у нас товара у вас сгорит дом —<br> 
                 не переживайте, мы выдадим вам новый.<br>
                 Товар, не дом, конечно же.
               </p>
-              <img src="img/svg-device/warranty.svg" alt="guarantee">
-          </div>
+              <img class="service-right-2" src="img/svg-device/warranty.svg" alt="гарантия"  width="171" height="195">
+            </li>
 
-        </section>
-
-        <section class="container-service visually-hidden">
-
-          <ul class="service-left">
-            <li><button type="button" class="service-left-button-3-1">Доставка</button></li>
-            <li><button type="button" class="service-left-button-3-2">Гарантия</button></li>
-            <li class="service-left-selected-li"><button type="button" class="service-left-button-3-3">Кредит</button></li>
-          </ul>
-
-          <div class="service-right">
+            <li class="element-display-none">
               <h2>Кредит</h2>
               <p>
                 Залезть в долговую яму стало проще! Кредитные консультанты<br> 
                 подберут для вас наиболее выгодные<br> 
                 условия кредита. Выгодные для нашего банка, разумеется.
               </p>
-              <img src="img/svg-device/credit.svg" alt="credit">
-          </div>
+              <img class="service-right-3" src="img/svg-device/credit.svg" alt="кредит"  width="156" height="188">
+            </li>
+
+          </ul>
 
         </section>
 
@@ -350,26 +352,26 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="">Подробнее о нас</a>
+          <a class="block-info-link about-us-link" href="">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
           <hr>
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="img/map 1.jpg" alt="map">
-          <div class="map-window visually-hidden">
+          <a class="map-link" href=""><img src="img/map-1.jpg" alt="карта"  width="560" height="222"></a>
+          <div class="map-window element-display-none">
             <div>
               <button type="button"></button>
             </div>
-            <img src="img/map-big 1.png" alt="map">
+            <img src="img/map-big-1.png" alt="карта"  width="994" height="593">
           </div>
-          <a href="">Напишите нам</a>
-          <div class="form-window visually-hidden">
+          <a class="block-info-link contacts-link" href="">Напишите нам</a>
+          <div class="form-window element-display-none">
             <div class="form-window-close">
               <button type="button"></button>
             </div>
-            <form action="" method="post">
+            <form action="#" method="post">
               <fieldset>
                 <legend></legend>
                 <section>
@@ -379,12 +381,12 @@
                   </div>
                   <div class="form-window-email">
                     <label for="email">Ваш e-mail:</label>
-                    <input type="email" name="email" placeholder="email@example.com" required>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
                   </div>
                 </section>
                 <label for="letter">Текст письма:</label>
                 <textarea name="letter" id="letter"  placeholder="В свободной форме"></textarea>
-                <input type="submit" value="Отправить" class="form-submit">
+                <button type="submit" value="Отправить" class="form-submit">
               </fieldset>
             </form>
           </div>
@@ -446,7 +448,7 @@
             <li><a href="#"><span class="visually-hidden">Наш twitter</span><img src="img/svg-device/twitter.svg" alt="twitter"></a></li>
           </ul>
           <div class="academy-logo">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg-device/logo-html.svg" alt="HTMLacademy"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg-device/logo-html.svg" alt="HTMLacademy"  width="29.943" height="34.09"></a>
           </div>
         </section>
 
