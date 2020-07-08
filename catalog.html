@@ -16,12 +16,17 @@
 
       <section class="functions">
         <div class="functions-left">
-          <label for="search" class="visually-hidden">Поиск</label>
-          <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-          <div class="element-display-none">
-            <button type="submit">Найти</button>
-            <hr>
-          </div>
+          <form action="#" method="GET">
+            <fieldset>
+              <legend></legend>
+              <label for="search" class="visually-hidden">Поиск</label>
+              <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <div class="element-display-none">
+                <button type="submit">Найти</button>
+                <hr>
+              </div>
+            </fieldset>
+          </form>
         </div>
         <ul class="functions-right">
           <li>
@@ -37,63 +42,64 @@
         </ul>
       </section>
   
-      <nav class="nav-catalog">
+      <nav>
 
-        <div class="nav-cat-link">
-          <a href="catalog.html">Каталог товаров</a> 
-        </div>
+        <ul class="nav-list">
+          <li class="nav-catalog-li">
+            <a href="" class="nav-catalog-a">Каталог товаров</a>
+            <section class="cat-list">
 
-        <ul class="nav-service-list">
-          <li>
-            <a href="">Доставка</a> 
+              <ul>
+                <li>
+                  <a href="">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="">Экшн-камеры</a>
+                </li>
+              </ul>
+      
+              <ul>
+                <li>
+                  <a href="">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="">Умные часы</a>
+                </li>
+              </ul>
+      
+              <ul>
+                <li>
+                  <a href="">Квадрокоптер</a>
+                </li>
+              </ul>
+      
+            </section>
           </li>
-          <li>
-            <a href="">Гарантия</a> 
+          <li class="nav-service-li-1">
+            <a href="#" class="nav-service-a">Доставка</a> 
           </li>
-          <li>
-            <a href="">Контакты</a> 
+          <li class="nav-service-li-2">
+            <a href="#" class="nav-service-a">Гарантия</a> 
+          </li>
+          <li class="nav-service-li-3">
+            <a href="#" class="nav-service-a">Контакты</a> 
           </li>
         </ul>
 
-      </nav>    
-
-      <section class="cat-list element-display-none">
-
-        <ul>
-          <li>
-            <a href="">Виртуальная реальность</a>
-          </li>
-          <li>
-            <a href="">Моноподы для селфи</a>
-          </li>
-          <li>
-            <a href="">Экшн-камеры</a>
-          </li>
-        </ul>
-
-        <ul>
-          <li>
-            <a href="">Фитнес-браслеты</a>
-          </li>
-          <li>
-            <a href="">Умные часы</a>
-          </li>
-        </ul>
-
-        <ul>
-          <li>
-            <a href="">Квадрокоптер</a>
-          </li>
-        </ul>
-
-      </section>
+      </nav>
       
     </header>
 
     <main>
-        
-      <section class="main-header">
+
+      <div class="main-header">
         <h1>Моноподы для селфи</h1>
+      </div>
+        
+      <section class="main-path">
         <ul>
           <li>
             <a href="index.html">Главная</a> 
@@ -107,13 +113,34 @@
         </ul>
       </section>
 
-      <div class="products-main-container">
+        <div class="container-head">
           
-          <div class="products-container">
+          <div class="container-head-left-side-block"></div>
+
+          <div class="form-header">Фильтр:</div>
+
+          <section class="product-sorting-panel">
+            <div class="product-sorting-header">Сортировка:</div>
+            <ul class="sorting-categories">
+              <li><button type="button" class="sorting-categories-button-selected">По цене</button></li>
+              <li><button type="button" class="sorting-categories-button">По типу</button></li>
+              <li><button type="button" class="sorting-categories-button">По популярности</button></li>
+            </ul>
+            <ul class="buttons-sorting-categories">
+              <li><button class="button-sorting-categories-1" type="button"><span class="visually-hidden">Сортировка по убыванию</span></button></li>
+              <li><button class="button-sorting-categories-2" type="button"><span class="visually-hidden">Сортировка по возрастанию</span></button></li>
+            </ul>
+          </section>
+
+          <div class="container-head-right-side-block"></div>
+
+        </div>
+
+        <div class="products-container">
+
+            <div class="products-container-left-side-block"></div>
 
             <section class="sidebar">
-
-                <div class="form-header">Фильтр:</div>
 
                 <section class="aside-form">
 
@@ -185,23 +212,9 @@
             
             <section class="products-main">
 
-                <section class="product-sorting-panel">
-                  <div class="product-sorting-header">Сортировка:</div>
-                  <ul class="sorting-categories">
-                    <li><button type="button" class="sorting-categories-button-selected">По цене</button></li>
-                    <li><button type="button" class="sorting-categories-button">По типу</button></li>
-                    <li><button type="button" class="sorting-categories-button">По популярности</button></li>
-                  </ul>
-                  <ul class="buttons-sorting-categories">
-                    <li><button class="button-sorting-categories-1" type="button"><span class="visually-hidden">Сортировка по убыванию</span></button></li>
-                    <li><button class="button-sorting-categories-2" type="button"><span class="visually-hidden">Сортировка по возрастанию</span></button></li>
-                  </ul>
-                </section>
-
                 <ul class="product-list">
                   <li>
-                    <span class="new-item element-display-none">New</span>
-                    <div class="product-hover element-display-none">
+                    <div class="product-hover">
                       <button type="button" class="product-hover-button-1">В корзину</button>
                       <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
                     </div>
@@ -212,8 +225,7 @@
                     </div>
                   </li>
                   <li>
-                    <span class="new-item element-display-none">New</span>
-                    <div class="product-hover element-display-none">
+                    <div class="product-hover">
                       <button type="button" class="product-hover-button-1">В корзину</button>
                       <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
                     </div>
@@ -224,8 +236,7 @@
                     </div>
                   </li>
                   <li>
-                    <span class="new-item element-display-none">New</span>
-                    <div class="product-hover element-display-none">
+                    <div class="product-hover">
                       <button type="button" class="product-hover-button-1">В корзину</button>
                       <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
                     </div>
@@ -236,8 +247,8 @@
                     </div>
                   </li>
                   <li>
-                    <span class="new-item element-display-none">New</span>
-                    <div class="product-hover element-display-none">
+                    <span class="new-item">New</span>
+                    <div class="product-hover">
                       <button type="button" class="product-hover-button-1">В корзину</button>
                       <button type="button" class="product-hover-button-2">Добавить к сравнению</button>
                     </div>
@@ -265,9 +276,9 @@
 
             </section>
 
-          </div>
+            <div class="products-container-right-side-block"></div>
 
-      </div>
+        </div>
 
     </main>
 
@@ -319,9 +330,9 @@
             <hr>
           </div>
           <ul class="social-links">
-            <li><a href="#"><span class="visually-hidden">Наш facebook</span><img src="img/svg-device/fb.svg" alt="facebook"></a></li>
-            <li><a href="#"><span class="visually-hidden">Наш instagram</span><img src="img/svg-device/instagram.svg" alt="instagram"></a></li>
-            <li><a href="#"><span class="visually-hidden">Наш twitter</span><img src="img/svg-device/twitter.svg" alt="twitter"></a></li>
+            <li><a href="#"><span class="visually-hidden">Наш facebook</span><img src="img/svg-device/fb.svg" alt="facebook" width="32" height="32"></a></li>
+            <li><a href="#"><span class="visually-hidden">Наш instagram</span><img src="img/svg-device/instagram.svg" alt="instagram" width="32" height="32"></a></li>
+            <li><a href="#"><span class="visually-hidden">Наш twitter</span><img src="img/svg-device/twitter.svg" alt="twitter" width="32" height="32"></a></li>
           </ul>
           <div class="academy-logo">
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg-device/logo-html.svg" alt="HTMLacademy" width="30" height="34"></a>
