@@ -1095,15 +1095,24 @@ footer{
 .map-window{
     position: absolute;
     top: 36px;
-    right: 92px;
+    left: 84px;
 }
 .map-window div{
     position: relative;
 }
+.map-window img{
+    position: absolute;
+    z-index: 2;
+}
+.map-window iframe{
+    position: absolute;
+    z-index: 3;
+}
 .map-window button{
     position: absolute;
     top: 29px;
-    right: 36px;
+    left: 903px;
+    z-index: 4;
     background-image: url("../img/svg-device/modal-close.svg");
     width: 55px;
     height: 55px;

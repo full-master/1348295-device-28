@@ -190,3 +190,33 @@ serviceLeftButton3.addEventListener("click", function (evt){
     serviceRight1.classList.add("element-display-none");
     serviceRight3.classList.remove("element-display-none");
 });
+
+// __________________________________________
+// _________________MAP______________________
+// __________________________________________
+
+var contactsLinkMap = document.querySelector(".map-link");
+var contactsPopupMap = document.querySelector(".map-window");
+var contactsCloseMap = contactsPopupMap.querySelector(".map-window-close-button");
+
+contactsLinkMap.addEventListener("click", function (evt){
+    evt.preventDefault();
+    contactsPopupMap.classList.remove("element-display-none");
+    contactsPopupMap.classList.add("element-display-block");
+});
+
+contactsCloseMap.addEventListener("click", function (evt){
+    evt.preventDefault();
+    contactsPopupMap.classList.add("element-display-none");
+    contactsPopupMap.classList.remove("element-display-block");
+});
+
+window.addEventListener("keydown", function (evt){
+    if (evt.keyCode === 27){
+      if (contactsPopupMap.classList.contains("element-display-block")){
+        evt.preventDefault();
+        contactsPopupMap.classList.remove("element-display-block");
+        contactsPopupMap.classList.add("element-display-none");
+      }
+    }
+});
